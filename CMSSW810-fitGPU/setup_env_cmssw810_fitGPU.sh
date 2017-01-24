@@ -4,6 +4,7 @@
 # >> ssh ecorni@felk40.cern.ch
 #
 # Setup CMSSW_8_1_0 for GPU fit:
+# >> source ./setup_env_cmssw810_fitGPU.sh
 # ######################################## #
 
 #!/bin/bash
