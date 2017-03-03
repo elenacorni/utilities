@@ -1,9 +1,4 @@
-# 
 cd /mnt
-sudo mkdir /mnt/scambio_vbox
+# sudo mkdir /mnt/scambio_vbox
 # mount the share folder (nb: name of share folder is all lowercase)
 sudo mount.vboxsf scambio /mnt/scambio_vbox
-# to muont it when system starts:
-sudo vim /etc/fstab
-# add this line:
-scambio /mnt/scambio_vbox vboxsf defaults 0 0
