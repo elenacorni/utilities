@@ -1,4 +1,5 @@
 cd /mnt
-# sudo mkdir /mnt/scambio_vbox
+#sudo mkdir /mnt/share_folder
 # mount the share folder (nb: name of share folder is all lowercase)
-sudo mount.vboxsf scambio /mnt/scambio_vbox
+sudo mount.vboxsf share-vbx /mnt/share_folder/
+cd /mnt/share_folder
