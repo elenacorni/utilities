@@ -109,7 +109,7 @@ Al fine di minimizzare il numero totale di immagini, visto il limite a 60 file p
 di seguito vengono dati alcuni suggerimenti su come si potrebbero accorpare alcune immagini per le sezioni dedicate 
 agli esperimenti:
 
-**ALICE**  
+**a. ALICE**  
 img:  
 - `ALICEtape.png`
 - `FTDalice.png`
@@ -120,7 +120,7 @@ montage ALICEtape.png FTDalice.png -tile 1x2 -geometry +1+1 alice_tape.png
 rm ALICEtape.png FTDalice.png
 ```
 
-**ATLAS**  
+**b. ATLAS**  
 img:  
 - `all-infn.png`
 - `all-t1.png`
@@ -156,7 +156,7 @@ rm all-infn.png all-t1.png infn-all.png t1-all.png
 rm t0-infn.png t0-t1.png
 ```
 
-**CMS**  
+**c. CMS**  
 img:  
 - `Availability.png`
 - `Phedex_qPlot_All2Cnaf.png`
@@ -180,7 +180,7 @@ rm Readiness1.png      Readiness2.png
 rm jobs4activ.png      jobs4sites.png
 ```
 
-**LHCb**  
+**d. LHCb**  
 img:  
 - `JobTypes.png`
 - `Sites.png`
@@ -197,7 +197,7 @@ rm Throughput_By_Source.png JobTypes.png Sites.png throughput.png
 ---
 ### [2] Calcolo consistenza (nel caso un referente non potesse aggiornare la tabella):
 
-**ALICE** 
+**a. ALICE** 
 - Local:  http://www.cnaf.infn.it/~vladimir/gpfs.html
 ```
 @ Buffer: tab.: gpfs_tsm_alice > Used (tot.)  
@@ -211,7 +211,7 @@ rm Throughput_By_Source.png JobTypes.png Sites.png throughput.png
 @ Disk: tab.: Disk storage elements > riga: CNAF - SE > colonna: Xrootd info - Used  
 ```
 
-**CMS**  
+**b. CMS**  
 - Catalogo: https://cmsweb.cern.ch/phedex/prod/Reports::SiteUsage
 ```
 @ Tape: T1_IT_CNAF_MSS (https://cmsweb.cern.ch/phedex/prod/Reports::SiteUsage?node=T1_IT_CNAF_MSS# )  
