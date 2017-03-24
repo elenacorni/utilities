@@ -5,10 +5,10 @@
 - `ticket.tex`	: .tex per generare le due tabelle dei ticket		(Sezione 4)
 - `alice/`	: cartella contenente i file per esperimento ALICE 	(Sezione 5)
 - `atlas/`	: cartella contenente i file per esperimento ATLAS 	(Sezione 6)
-- `cms/`		: cartella contenente i file per esperimento CMS   	(Sezione 7)
-- `lhcb/`		: cartella contenente i file per esperimento LHCb  	(Sezione 8)
-- `scripts/`      : cartella contenente tutti gli script per generare le immagini comuni
-- `common_img/`   : cartella contenente tutte le immagini comuni
+- `cms/`	: cartella contenente i file per esperimento CMS   	(Sezione 7)
+- `lhcb/`	: cartella contenente i file per esperimento LHCb  	(Sezione 8)
+- `scripts/`    : cartella contenente tutti gli script per generare le immagini comuni
+- `common_img/` : cartella contenente tutte le immagini comuni
 - `AR.ods`	: file excel per generare grafici Sezione 3
 
 ---
@@ -63,7 +63,7 @@
 
 - **SEZIONE 2.3: Consistenza CNAF vs EXP**  
   Ogni sezione viene compilata dall'esperimento.[2]  
-  (Per accorpare le immagni guardare i comandi nella sezione [1])
+  (Per accorpare le immagini guardare i comandi nella sezione [1])
 
 - **SEZIONE 4: Tickets**  
   Creare i file `file.crt.pem` e `file.key.pem` nella cartella `scripts/` con i comandi:
@@ -210,6 +210,15 @@ rm Throughput_By_Source.png JobTypes.png Sites.png throughput.png
                                         +  
 @ Disk: tab.: Disk storage elements > riga: CNAF - SE > colonna: Xrootd info - Used  
 ```
+Oppure:  
+http://alimonitor.cern.ch/stats?submit_plot=Plot&page=SE%2Ftable&filter_0=CNAF&filter_0_0=&filter_0_1=&filter_0_2=&filter_0_3=&filter_0_4=&filter_0_5=&filter_0_6=&filter_0_7=&filter_0_8=&filter_0_9=&filter_0_10=&filter_0_11=&filter_0_12=&filter_0_13=&filter_0_14=&filter_0_15=&filter_0_16=&filter_0_17=&filter_0_18=&filter_1=CNAF&filter_1_0=&filter_1_1=&filter_1_2=&filter_1_3=&filter_1_4=&filter_1_5=&filter_1_6=&filter_1_7=&filter_1_8=&filter_1_9=&filter_1_10=&filter_1_11=&filter_1_12=&filter_1_13=&filter_1_14=&filter_1_15=&filter_1_16=&filter_1_17=&filter_1_18=  
+Uso disco nel catalogo ottiene sommando i numeri "Used" secondo questa formula:  
+```
+( <disk>(PB) + <tape>(TB!!)/1024)  * 1.024 * 1.024 * 1.024 * 1.024 * 1.024 = <TOT> PB
+
+es. ( 3.321 + 366.7/1024)  * 1.024 * 1.024 * 1.024 * 1.024 * 1.024 = 4.14 PB 
+```
+ALICE riporta in base 1024 e non base 1000 come al CNAF quindi per ottenere un numero confrontabile devi riscalare (per avere i PB nel sistema di accounting CNAF).  
 
 **b. CMS**  
 - Catalogo: https://cmsweb.cern.ch/phedex/prod/Reports::SiteUsage
@@ -231,6 +240,3 @@ rm Throughput_By_Source.png JobTypes.png Sites.png throughput.png
 @ Disk: https://www.cnaf.infn.it/~vladimir/gpfs  
         tab.: cms (ds-511) > riga: Cms_disk > colonna: Used(GB) (ATTENZIONE SONO GB!!! trasformali in PT)
 ```
-
-
-
