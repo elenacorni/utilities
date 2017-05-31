@@ -1,0 +1,21 @@
+1. controllare se su /etc/fstab ci sia:
+
+# UNCONFIGURED FSTAB FOR BASE SYSTEM
+avoton1:/mnt/raid1/shared /mnt/avoton  nfs  rw  0 0 
+
+2. controllare che in /mnt/ ci sia la cartella avoton, cioè la cartella che vuoi montare
+
+3. mount -a
+mount: wrong fs type, bad option, bad superblock on avoton1:/mnt/raid1/shared,
+       missing codepage or helper program, or other error
+       (for several filesystems (e.g. nfs, cifs) you might
+       need a /sbin/mount.<type> helper program)
+
+       In some cases useful info is found in syslog - try
+       dmesg | tail or so.
+
+4. per silovere questo problema controllare che in  /sbin/mount* ci sia un  mount.nfs altrimenti:
+
+apt-get install nfs-common
+
+5. rifare mount -a :)
