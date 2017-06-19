@@ -36,8 +36,9 @@ git push -u origin master
 # risolvere dando:
 unset SSH_ASKPASS
 
-# e riprovare:
-git push -u origin master
+# and then running (You can also add the line to your .bashrc file.):
+git push origin master
+
 Password:
 Counting objects: 4, done.
 Delta compression using up to 24 threads.
