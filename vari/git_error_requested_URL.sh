@@ -29,3 +29,24 @@ git remote rm origin
 git remote add origin https://<username>@<string-after-https://>
 # es: git remote add origin https://elenacorni@github.com/elenacorni/pita.git
 git push -u origin master
+
+# se però ti da' quest'errore:
+(gnome-ssh-askpass:29049): Gtk-WARNING **: cannot open display:
+
+# risolvere dando:
+unset SSH_ASKPASS
+
+# e riprovare:
+git push -u origin master
+Password:
+Counting objects: 4, done.
+Delta compression using up to 24 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 279 bytes, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://elenacorni@github.com/elenacorni/utilities.git
+   fbe98f0..a2b0290  master -> master
+Branch master set up to track remote branch master from origin.
+
+:-)
