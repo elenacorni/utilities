@@ -1,0 +1,17 @@
+# TK1
+
+To monitor GPU utilization I just view the current load of the GPU by checking in on this file.
+
+1.    cat /sys/devices/platform/host1x/gk20a.0/load
+
+If I want to monitor it, I use watch with the file.
+
+2.    watch -n 1 cat /sys/devices/platform/host1x/gk20a.0/load
+
+# TX1
+
+Those INA's are not yet supported in the software. After production release of the individual module, they may or may not be enabled.
+The nvidia-smi / NVML has not historically been implemented on Tegra platforms.
+
+Newer revisions of the TX1 module enable the use of INA power monitors, see:
+https://devtalk.nvidia.com/default/topic/950341/jetson-tx1/jetson-tx1-ina226-power-monitor-with-i2c-interface-/post/4998393/#4998393
