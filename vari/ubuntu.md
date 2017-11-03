@@ -9,7 +9,7 @@
 ## Example2
 ## Third Example
 
-### BUG: soft lockup - CPU#0 stuck for Xs!
+## BUG: soft lockup - CPU#0 stuck for Xs!
 
 (https://customerhelp.co.za/linux/ubuntu/fix-ubuntu-bug-soft-lockup-cpu-stuck-vmware-server.html)
 
