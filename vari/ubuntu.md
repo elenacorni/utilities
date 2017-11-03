@@ -6,21 +6,20 @@
 
 ## BUG: soft lockup - CPU#0 stuck for Xs!
 
-(https://customerhelp.co.za/linux/ubuntu/fix-ubuntu-bug-soft-lockup-cpu-stuck-vmware-server.html)
+Link: https://customerhelp.co.za/linux/ubuntu/fix-ubuntu-bug-soft-lockup-cpu-stuck-vmware-server.html
 
-Nella schermata d'inizio nel file di grub e aggiungere alla riga `GRUB_CMDLINE_LINUX_DEFAULT`: `pci=noacpi acpi=off noapic`.  
-Salvare e accendere la vm/macchina.
+* Nella schermata d'inizio nel file di grub e aggiungere alla riga `GRUB_CMDLINE_LINUX_DEFAULT`: `pci=noacpi acpi=off noapic`.  
+* Salvare e accendere la vm/macchina.
 
-Una volta in Ubuntu:
+* Una volta in Ubuntu:
 ```sh
 sudo vi /etc/default/grub
 ```
-Cerca `GRUB_CMDLINE_LINUX_DEFAULT` e aggiungi `pci=noacpi acpi=off noapic`, salva ed esci dal file e come ultima cosa fai:
+* Cerca `GRUB_CMDLINE_LINUX_DEFAULT` e aggiungi `pci=noacpi acpi=off noapic`, salva ed esci dal file e come ultima cosa fai:
 ```sh
 sudo update-grub
 ```
- 
-Restart pc (facoltativo):
+* Restart pc (facoltativo):
 ```sh
 sudo shutdown now -r  
 ```
