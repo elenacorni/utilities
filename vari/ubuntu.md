@@ -1,7 +1,7 @@
 # Settaggi Ubuntu
 
 # Table of Contents
-1. [BUG\: CPU0 stuck for Xs](#bug:-cpu0-stuck-for-xs)
+1. [BUG CPU stuck for Xs](#bug-cpu-stuck-for-xs)
 2. [Example2](#example2)
 3. [Third Example](#third-example)
 
@@ -9,7 +9,7 @@
 ## Example2
 ## Third Example
 
-## BUG: CPU0 stuck for Xs
+## BUG CPU stuck for Xs
 
 (https://customerhelp.co.za/linux/ubuntu/fix-ubuntu-bug-soft-lockup-cpu-stuck-vmware-server.html)
 
