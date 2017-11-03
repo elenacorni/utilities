@@ -2,8 +2,7 @@
 
 # Table of Contents
 1. [BUG: soft lockup - CPU#0 stuck for Xs!](#bug-soft-lockup---cpu0-stuck-for-xs)
-2. [Spostare i bottoni delle cartelle da dx a sinix](#example2)
-3. [Third Example](#third-example)
+2. [Spostare i bottoni delle cartelle da dx a sinix](#spostare-i-bottoni-delle-cartelle-da-dx-a-sinix)
 
 ## BUG: soft lockup - CPU#0 stuck for Xs!
 
