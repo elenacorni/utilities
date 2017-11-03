@@ -1,18 +1,9 @@
 # Settaggi Ubuntu
 
 # Table of Contents
-0. [soft lockup - CPU#0 stuck](#soft-lockup-cpu0-stuck)
 1. [BUG: soft lockup - CPU#0 stuck for Xs!](#bug-soft-lockup---cpu0-stuck-for-xs)
-2. [Example2](#example2)
+2. [Spostare i bottoni delle cartelle da dx a sinix](#example2)
 3. [Third Example](#third-example)
-
-## soft lockup - CPU#0 stuck
-## Example
-## Example2
-## Third Example
-
-
-
 
 ## BUG: soft lockup - CPU#0 stuck for Xs!
 
