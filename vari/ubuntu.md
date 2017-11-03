@@ -1,5 +1,14 @@
 # Settaggi Ubuntu
 
+# Table of Contents
+1. [Example](#example)
+2. [Example2](#example2)
+3. [Third Example](#third-example)
+
+## Example
+## Example2
+## Third Example
+
 ### [FIX] BUG: soft lockup - CPU#0 stuck for Xs!
 
 (https://customerhelp.co.za/linux/ubuntu/fix-ubuntu-bug-soft-lockup-cpu-stuck-vmware-server.html)
