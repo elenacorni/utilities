@@ -1,7 +1,7 @@
 # Settaggi Ubuntu
 
 # Table of Contents
-1. [Example](#example)
+1. [[FIX] BUG: soft lockup - CPU#0 stuck for Xs!](#[fix]-bug:-soft-lockup---cpu#0-stuck-for-xs!)
 2. [Example2](#example2)
 3. [Third Example](#third-example)
 
